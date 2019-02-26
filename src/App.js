@@ -7,6 +7,7 @@ import AddressForm from './AddressForm';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Paper from '@material-ui/core/Paper';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Greeting from "./Greeting"
 
 const styles = theme => ({
   layout: {
@@ -47,6 +48,7 @@ const styles = theme => ({
     return(
       <div>
         <AddressForm />
+        <Greeting />
       </div>
     )
   }
