@@ -7,6 +7,7 @@ import AddressForm from './AddressForm';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Paper from '@material-ui/core/Paper';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Trash from './Trash';
 
 const styles = theme => ({
   layout: {
@@ -43,13 +44,13 @@ const styles = theme => ({
 });
 
 
-  function App() { 
-    return(
-      <div>
-        <AddressForm />
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div>
+      <AddressForm />
+    </div>
+  )
+}
 
 
 /*
