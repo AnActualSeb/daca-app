@@ -50,7 +50,7 @@ const styles = theme => ({
       <div>
         <AddressForm />
         <Greeting />
-        <Godit />
+        <God />
       </div>
     )
   }
