@@ -7,10 +7,10 @@ import { Container } from 'semantic-ui-react';
 class App extends Component {
 
   render() {
-    return(
-      <Container textAlign='center'>
+    return (
+      <Container textAlign='left'>
         <MainForm />
-      </Container>    
+      </Container>
     )
   }
 }
