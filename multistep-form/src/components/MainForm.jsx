@@ -7,6 +7,7 @@ import Success from './Success';
 import LetsBegin from "./LetsBegin"
 import YourAddresses from "./YourAddresses"
 import SocialSecurity from "./SocialSecurity"
+import BootstrapDemo from "./BootstrapDemo"
 
 class MainForm extends Component {
     state = {
@@ -88,6 +89,13 @@ class MainForm extends Component {
                     />
         case 7:
             return <SocialSecurity 
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
+                    values={values}
+                    />
+        case 7:
+            return <UserDetails 
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     handleChange = {this.handleChange}
