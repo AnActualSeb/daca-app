@@ -94,8 +94,8 @@ class MainForm extends Component {
                     handleChange = {this.handleChange}
                     values={values}
                     />
-        case 7:
-            return <UserDetails 
+        case 8:
+            return <BootstrapDemo 
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     handleChange = {this.handleChange}

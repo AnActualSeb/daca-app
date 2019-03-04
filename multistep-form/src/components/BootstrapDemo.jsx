@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Container from "react-bootstrap/Container";
 
 class BootstrapDemo extends Component{
 
@@ -19,6 +20,7 @@ class BootstrapDemo extends Component{
     render(){
         const { values } = this.props;
         return(
+          <Container>
             <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -45,10 +47,15 @@ class BootstrapDemo extends Component{
             <Form.Group controlId="formBasicChecbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
+
+            
+
             <Button variant="primary" type="submit" onClick={this.saveAndContinue}>
               Submit
             </Button>
           </Form>
+          </Container>
+            
         )
     }
 }
