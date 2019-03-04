@@ -8,7 +8,7 @@ class App extends Component {
 
   render() {
     return(
-      <Container textAlign='center'>
+      <Container textAlign='left'>
         <MainForm />
       </Container>    
     )
