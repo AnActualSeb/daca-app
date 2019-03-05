@@ -1,14 +1,7 @@
 {
-  "main.css": "/daca-app/static/css/main.861699e3.chunk.css",
-  "main.js": "/daca-app/static/js/main.f1bf1584.chunk.js",
-  "main.js.map": "/daca-app/static/js/main.f1bf1584.chunk.js.map",
-  "runtime~main.js": "/daca-app/static/js/runtime~main.c8745226.js",
-  "runtime~main.js.map": "/daca-app/static/js/runtime~main.c8745226.js.map",
-  "static/js/2.adbd72cc.chunk.js": "/daca-app/static/js/2.adbd72cc.chunk.js",
-  "static/js/2.adbd72cc.chunk.js.map": "/daca-app/static/js/2.adbd72cc.chunk.js.map",
-  "index.html": "/daca-app/index.html",
-  "precache-manifest.b82046ee8fc611311e81d92ef3e3f847.js": "/daca-app/precache-manifest.b82046ee8fc611311e81d92ef3e3f847.js",
-  "service-worker.js": "/daca-app/service-worker.js",
-  "static/css/main.861699e3.chunk.css.map": "/daca-app/static/css/main.861699e3.chunk.css.map",
-  "static/media/logo.svg": "/daca-app/static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.03057b09.css",
+  "main.css.map": "static/css/main.03057b09.css.map",
+  "main.js": "static/js/main.c07484f7.js",
+  "main.js.map": "static/js/main.c07484f7.js.map",
+  "static/media/logo.svg": "static/media/logo.3b48886a.svg"
 }
