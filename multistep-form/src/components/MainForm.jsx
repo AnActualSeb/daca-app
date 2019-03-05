@@ -4,15 +4,27 @@ import PersonalDetails from './PersonalDetails';
 import Confirmation from './Confirmation';
 import Success from './Success';
 
+import LetsBegin from "./LetsBegin"
+import YourAddresses from "./YourAddresses"
+import SocialSecurity from "./SocialSecurity"
+import BootstrapDemo from "./BootstrapDemo"
+
 class MainForm extends Component {
     state = {
         step: 1,
         firstName: '',
         lastName: '',
+        middleName: '',
         email: '',
         age: '',
         city: '',
-        country: ''
+        country: '',
+        dateOfBirth:'',
+        cityOfBirth:"",
+        stateOfBirth:"",
+        countryOfBirth:"",
+        countryOfCitizenship:""
+
     }
 
     nextStep = () => {
@@ -35,8 +47,8 @@ class MainForm extends Component {
     
     render(){
         const {step} = this.state;
-        const { firstName, lastName, email, age, city, country } = this.state;
-        const values = { firstName, lastName, email, age, city, country };
+        const { firstName, middleName, lastName, email, age, city, country } = this.state;
+        const values = { firstName, middleName, lastName, email, age, city, country };
         switch(step) {
         case 1:
             return <UserDetails 
@@ -58,7 +70,37 @@ class MainForm extends Component {
                     values={values}
                     />
         case 4:
-            return <Success />
+            return <Success
+                     nextStep={this.nextStep}
+                    />
+        case 5:
+            return <LetsBegin 
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
+                    values={values}
+                    />
+        case 6:
+            return <YourAddresses 
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
+                    values={values}
+                    />
+        case 7:
+            return <SocialSecurity 
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
+                    values={values}
+                    />
+        case 8:
+            return <BootstrapDemo 
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
+                    values={values}
+                    />
         }
     }
 }
