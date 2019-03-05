@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from "react-bootstrap/Container";
+import FormCheck from "react-bootstrap/FormCheck";
 
 class BootstrapDemo extends Component{
 
@@ -21,6 +22,7 @@ class BootstrapDemo extends Component{
         const { values } = this.props;
         return(
           <Container>
+            <h1>Fuffjuan is here</h1>
             <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -48,7 +50,29 @@ class BootstrapDemo extends Component{
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
 
-            
+            <Form.Group controlId="formBasicChecbox">
+              <Form.Check type="checkbox" label="Check me out" />
+            </Form.Group>
+
+              <Form.Check
+                type="radio"
+                label="first radio"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+              <Form.Check
+                type="radio"
+                label="second radio"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios2"
+              />
+              <Form.Check
+                type="radio"
+                label="third radio"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios3"
+              />
+
 
             <Button variant="primary" type="submit" onClick={this.saveAndContinue}>
               Submit
