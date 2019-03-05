@@ -8,9 +8,10 @@ class App extends Component {
 
   render() {
     return(
+
       <Container textAlign='left'>
         <MainForm />
-      </Container>    
+      </Container>
     )
   }
 }
