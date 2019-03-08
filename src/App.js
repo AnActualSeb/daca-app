@@ -12,7 +12,7 @@ class App extends Component {
       // <Container textAlign='left'>
       //   <MainForm />
       // </Container>
-      <RenderItems />
+      <SideNavBar />
     );
   }
 }
