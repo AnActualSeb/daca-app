@@ -7,11 +7,14 @@ import {
   ExampleBody as Body
 } from "./containers";
 import { Icon } from "react-icons-kit";
-import { dashboard } from "react-icons-kit/fa/dashboard";
-import { users } from "react-icons-kit/fa/users";
-import { shoppingCart } from "react-icons-kit/fa/shoppingCart";
-import { cubes } from "react-icons-kit/fa/cubes";
 import { circleO } from "react-icons-kit/fa/circleO";
+import { iosHome } from "react-icons-kit/ionicons/iosHome";
+import { iosInformation } from "react-icons-kit/ionicons/iosInformation";
+import { iosList } from "react-icons-kit/ionicons/iosList";
+import { iosCopy } from "react-icons-kit/ionicons/iosCopy";
+import { socialUsd } from "react-icons-kit/ionicons/socialUsd";
+import { iosCheckmark } from "react-icons-kit/ionicons/iosCheckmark";
+import { iosPrinter } from "react-icons-kit/ionicons/iosPrinter";
 
 const AppContainer = styled(BaseAppContainer)`
   height: calc(100vh - 40px);
@@ -42,7 +45,7 @@ const Text = styled.div`
   padding-left: 8px;
 `;
 
-export class RenderItems extends React.Component {
+export class SideNavBar extends React.Component {
   state = { selectedPath: "1" };
 
   onItemSelection = arg => {
@@ -60,33 +63,64 @@ export class RenderItems extends React.Component {
           >
             <Nav id="1">
               <IconCnt>
-                <Icon icon={dashboard} />
+                <Icon icon={iosHome} />
               </IconCnt>
               <Text>Dashboard</Text>
             </Nav>
             <Nav id="2">
               <IconCnt>
-                <Icon icon={users} />
+                <Icon icon={iosCopy} />
               </IconCnt>
-              <Text>Users</Text>
+              <Text>Collect Documents</Text>
             </Nav>
             <Nav id="3">
               <IconCnt>
-                <Icon icon={shoppingCart} />
+                <Icon icon={iosInformation} />
               </IconCnt>
-              <Text>Deliveries</Text>
+              <Text>Provide Your Information</Text>
             </Nav>
             <Nav id="4">
               <IconCnt>
-                <Icon icon={circleO} />
+                <Icon icon={iosList} />
               </IconCnt>
-              <Text>Orders</Text>
+              <Text>Forms</Text>
+              {/* Nested Forms here! */}
+              <Nav id="1">
+                <IconCnt>
+                  <Icon icon={circleO} />
+                </IconCnt>
+                <Text>I-821D</Text>
+              </Nav>
+              <Nav id="2">
+                <IconCnt>
+                  <Icon icon={circleO} />
+                </IconCnt>
+                <Text>I-765</Text>
+              </Nav>
+              <Nav id="3">
+                <IconCnt>
+                  <Icon icon={circleO} />
+                </IconCnt>
+                <Text>I-765WS</Text>
+              </Nav>
             </Nav>
             <Nav id="5">
               <IconCnt>
-                <Icon icon={cubes} />
+                <Icon icon={socialUsd} />
               </IconCnt>
-              <Text>Transactions</Text>
+              <Text>Prepare Payment</Text>
+            </Nav>
+            <Nav id="6">
+              <IconCnt>
+                <Icon icon={iosCheckmark} />
+              </IconCnt>
+              <Text>Review Application</Text>
+            </Nav>
+            <Nav id="7">
+              <IconCnt>
+                <Icon icon={iosPrinter} />
+              </IconCnt>
+              <Text>Print and Mail</Text>
             </Nav>
           </SideNav>
         </Navigation>
