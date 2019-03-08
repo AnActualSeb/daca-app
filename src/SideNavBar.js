@@ -33,7 +33,7 @@ const IconCnt = styled.div`
   color: #6a56a5;
   display: flex;
   justify-content: center;
-  aligh-items: center;
+  align-items: center;
 `;
 
 const theme = {
@@ -124,10 +124,7 @@ export class SideNavBar extends React.Component {
             </Nav>
           </SideNav>
         </Navigation>
-        <Body>
-          You can render any items as child of Nav element. All items will be
-          rendered under a flex container.
-        </Body>
+        <Body />
       </AppContainer>
     );
   }

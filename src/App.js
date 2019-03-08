@@ -5,6 +5,7 @@ import MainForm from "./components/MainForm";
 import { Container } from "semantic-ui-react";
 import { SideNavBar } from "./SideNavBar";
 import { AppContainer, Navigation, Body, Title } from "./containers";
+import { MemoryRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
