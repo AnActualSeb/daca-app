@@ -12,7 +12,7 @@ class WrapUp extends Component {
       <Container>
         <h1 className="text-center">Great job. Keep going!</h1>
         <p className="text-center mb-4">
-          You're nearly there. Two more forms to go!
+          You're almost done with all the forms—just one more left.{" "}
         </p>
         <Container className="d-flex justify-content-center">
           <Card style={{ width: "50rem" }}>
@@ -23,46 +23,32 @@ class WrapUp extends Component {
               <ListGroup.Item>
                 I-821D: Consideration for Deferred Action on Childhood Arrivals
                 <Button
-                  variant="outline-primary"
+                  variant="outline-success"
                   className="float-right"
                   type="submit"
                 >
-                  Start
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
                 I-735: Application for Employment Authorization
                 <Button
-                  variant="outline-primary"
+                  variant="outline-success"
                   className="float-right"
                   type="submit"
                 >
-                  Start
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
                 I-735WS: Application for Employment Authorization Worksheet
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                >
+                <Button variant="primary" className="float-right" type="submit">
                   Start
                 </Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>
         </Container>
-
-        <br />
-
-        <Container className="d-flex justify-content-center">
-          <Button variant="primary" type="submit">
-            Pick up where I left off
-          </Button>
-        </Container>
-
-        <br />
       </Container>
     );
   }

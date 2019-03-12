@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { documentText } from "react-icons-kit/ionicons/documentText";
 
 class Resume extends Component {
   render() {
@@ -16,29 +17,34 @@ class Resume extends Component {
           where you left off.
         </p>
         <Container className="d-flex justify-content-center">
+          <Button variant="primary" type="submit" className="mb-4 mt-4">
+            Pick up where I left off
+          </Button>
+        </Container>
+        <Container className="d-flex justify-content-center mt-4">
           <Card style={{ width: "50rem" }}>
             <Card.Header className="text-center" as="h3">
               Your to-do list
             </Card.Header>
             <ListGroup variant="flush">
-              <ListGroup.Item>
+              <ListGroup.Item variant="success">
                 Collect documents
                 <Button
-                  variant="outline-primary"
+                  variant="outline-success"
                   className="float-right"
                   type="submit"
                 >
                   Review
                 </Button>
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item variant="success">
                 Your information
                 <Button
-                  variant="outline-primary"
+                  variant="outline-success"
                   className="float-right"
                   type="submit"
                 >
-                  Resume
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -48,7 +54,7 @@ class Resume extends Component {
                   className="float-right"
                   type="submit"
                 >
-                  Start
+                  Resume
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -76,12 +82,6 @@ class Resume extends Component {
         </Container>
 
         <br />
-
-        <Container className="d-flex justify-content-center">
-          <Button variant="primary" type="submit">
-            Pick up where I left off
-          </Button>
-        </Container>
 
         <br />
       </Container>
