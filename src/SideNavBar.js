@@ -45,7 +45,7 @@ const Text = styled.div`
   padding-left: 8px;
 `;
 
-export class SideNavBar extends React.Component {
+export default class SideNavBar extends React.Component {
   state = { selectedPath: "1" };
 
   onItemSelection = arg => {
