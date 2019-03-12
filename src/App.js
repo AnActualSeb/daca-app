@@ -10,19 +10,21 @@ import EligibilityCat from "./I765/EligibilityCat";
 import NoHelpBeforeInterpreter from "./I765/NoHelpBeforeInterpreter";
 import NoHelpBeforePreparer from "./I765/NoHelpBeforePreparer";
 import Resume from "./Resume";
+import WrapUp from "./I765/WrapUp";
 
 class App extends Component {
   render() {
     return (
       <Container>
         {/* <FormTest /> */}
-        <YourInfo />
+        {/* <YourInfo /> */}
         {/* <ReasonFor /> */}
         {/* <LastArrival /> */}
         {/* <EligibilityCat /> */}
         {/* <NoHelpBeforeInterpreter /> */}
         {/* <NoHelpBeforePreparer /> */}
         {/* <Resume /> */}
+        <WrapUp />
       </Container>
     );
   }
