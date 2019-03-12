@@ -33,6 +33,7 @@ import SidebarExampleSidebar from "./SidebarExampleSidebar";
 import WrapUp from "./I765/WrapUp";
 import Overview from "./Overview";
 import StartI765 from "./I765/StartI765";
+import FinancialInfo from "./I765WS/FinancialInfo";
 
 class App extends Component {
   render() {
@@ -46,9 +47,10 @@ class App extends Component {
         {/* <NoHelpBeforeInterpreter /> */}
         {/* <NoHelpBeforePreparer /> */}
         {/* <Resume /> */}
-        <WrapUp />
+        {/* <WrapUp /> */}
         {/* <Overview /> */}
         {/* <StartI765 /> */}
+        <FinancialInfo />
       </Container>
     );
   }
