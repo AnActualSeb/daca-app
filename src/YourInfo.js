@@ -176,7 +176,7 @@ class YourInfo extends Component {
           <Form.Row>
             <Form.Group as={Col} md="5" controlId="legalName">
               <Form.Label>Date of birth</Form.Label>
-              <Form.Control type="date" />
+              <Form.Control as="input" type="date" />
               <Form.Text className="text-muted">mm/dd/yyyy </Form.Text>
             </Form.Group>
           </Form.Row>
@@ -256,9 +256,9 @@ class YourInfo extends Component {
           <h2>3. Contact information</h2>
 
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="legalName">
+            <Form.Group as={Col} md="5" controlId="tel">
               <Form.Label>Daytime telephone number</Form.Label>
-              <Form.Control type="text" />
+              <Form.Control as="input" type="tel" />
             </Form.Group>
             <Form.Group as={Col} md="5" controlId="legalName">
               <Form.Label>Mobile telephone number</Form.Label>
@@ -274,8 +274,8 @@ class YourInfo extends Component {
 
           <h2>4. Other information we need to know</h2>
           <Form.Label as="legend">Gender</Form.Label>
-          <Form.Check type="radio" label="Male" name="yesNo" id="yesNo5" />
-          <Form.Check type="radio" label="Female" name="yesNo" id="yesNo6" />
+          <Form.Check type="radio" label="Male" name="mF1" id="mF1" />
+          <Form.Check type="radio" label="Female" name="mF1" id="mF2" />
           <br />
           <Form.Label as="legend">Marital status</Form.Label>
           <Form.Check type="radio" label="Married" name="yesNo" id="yesNo7" />

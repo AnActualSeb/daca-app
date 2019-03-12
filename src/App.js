@@ -30,13 +30,26 @@ import SidebarExampleSidebar from "./SidebarExampleSidebar";
 //     );
 //   }
 // }
+import WrapUp from "./I765/WrapUp";
+import Overview from "./Overview";
+import StartI765 from "./I765/StartI765";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <YourInfo />
-      </div>
+      <Container>
+        {/* <FormTest /> */}
+        {/* <YourInfo /> */}
+        {/* <ReasonFor /> */}
+        {/* <LastArrival /> */}
+        {/* <EligibilityCat /> */}
+        {/* <NoHelpBeforeInterpreter /> */}
+        {/* <NoHelpBeforePreparer /> */}
+        {/* <Resume /> */}
+        <WrapUp />
+        {/* <Overview /> */}
+        {/* <StartI765 /> */}
+      </Container>
     );
   }
 }
