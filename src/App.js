@@ -19,6 +19,7 @@ import FinancialInfo from "./I765WS/FinancialInfo";
 import StartI765Ws from "./I765WS/StartI765Ws";
 import Print from "./components/Print";
 import Home from "./components/Home";
+import PaymentIntro from "./payment/PaymentIntro";
 
 class App extends Component {
   render() {
@@ -37,6 +38,7 @@ class App extends Component {
               <Route path="/yourinfo" component={YourInfo} />
               <Route path="/I765/lastarrival" component={LastArrival} />
               <Route path="components/print" component={Print} />
+              <Route path="/startpayment" component={PaymentIntro} />
             </Switch>
           </div>
         </Router>
