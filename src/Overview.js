@@ -8,7 +8,12 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Table from "react-bootstrap/Table";
 import { Icon } from "react-icons-kit";
 
-import { numberOne } from "react-icons-kit/metrize/numberOne";
+import { iosInformationOutline } from "react-icons-kit/ionicons/iosInformationOutline";
+import { iosListOutline } from "react-icons-kit/ionicons/iosListOutline";
+import { iosContactOutline } from "react-icons-kit/ionicons/iosContactOutline";
+import { socialUsdOutline } from "react-icons-kit/ionicons/socialUsdOutline";
+import { iosCheckmarkOutline } from "react-icons-kit/ionicons/iosCheckmarkOutline";
+import { iosPrinterOutline } from "react-icons-kit/ionicons/iosPrinterOutline";
 
 class Overview extends Component {
   render() {
@@ -20,84 +25,65 @@ class Overview extends Component {
           We’re here to help you through the process of applying for DACA. We’ll
           tell you what documents you need, help you with the forms, and provide
           resources to make the process as streamlined as we can. When you’re
-          ready, select “Let’s get started” and we’ll begin.{" "}
+          ready, select “Let’s get started” and we’ll begin.
         </p>
-        <Container className="d-flex justify-content-center">
-          <Card style={{ width: "50rem" }}>
-            <Card.Header className="text-center" as="h3">
-              USCIS forms
-            </Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>
-                <Icon
-                  icon={numberOne}
-                  size={32}
-                  style={{ paddingRight: "8px" }}
-                />
-                I-821D: Consideration for Deferred Action on Childhood Arrivals
-              </ListGroup.Item>
-              <ListGroup.Item>
-                2. I-735: Application for Employment Authorization
-              </ListGroup.Item>
-              <ListGroup.Item>
-                3. I-735WS: Application for Employment Authorization Worksheet
-              </ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </Container>
 
         <Container className="pt-4 mb-4">
-          {" "}
           <ListGroup variant="flush">
             <ListGroup.Item>
+              <Icon
+                icon={iosInformationOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               Collect documents
               <Button variant="primary" className="float-right" type="submit">
-                Start
+                Let's get started
               </Button>
             </ListGroup.Item>
             <ListGroup.Item>
+              <Icon
+                icon={iosListOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               Provide your information{" "}
-              <Button variant="primary" className="float-right" type="submit">
-                Start
-              </Button>
             </ListGroup.Item>
             <ListGroup.Item>
+              <Icon
+                icon={iosContactOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               USCIS forms{" "}
-              <Button variant="primary" className="float-right" type="submit">
-                Start
-              </Button>
             </ListGroup.Item>
 
             <ListGroup.Item>
+              <Icon
+                icon={socialUsdOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               Prepare payment to USCIS ($495){" "}
-              <Button variant="primary" className="float-right" type="submit">
-                Start
-              </Button>
             </ListGroup.Item>
 
             <ListGroup.Item>
+              <Icon
+                icon={iosCheckmarkOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               Review application{" "}
-              <Button variant="primary" className="float-right" type="submit">
-                Start
-              </Button>
             </ListGroup.Item>
             <ListGroup.Item>
+              <Icon
+                icon={iosPrinterOutline}
+                size={32}
+                style={{ paddingRight: "16px" }}
+              />
               Print and mail application{" "}
-              <Button variant="primary" className="float-right" type="submit">
-                Start
-              </Button>
             </ListGroup.Item>
           </ListGroup>
-        </Container>
-
-        <Container>
-          <Button
-            variant="primary"
-            className="float-right mt-4 mb-4"
-            type="submit"
-          >
-            Start
-          </Button>
         </Container>
       </Container>
     );
