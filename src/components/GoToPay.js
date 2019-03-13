@@ -68,8 +68,12 @@ class GoToPay extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 USCIS Forms
-                <Button variant="primary" className="float-right" type="submit">
-                  Pick up where I left off
+                <Button
+                  variant="outline-success"
+                  className="float-right"
+                  type="submit"
+                >
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -79,6 +83,9 @@ class GoToPay extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Prepare payment to USCIS ($495)
+                <Button variant="primary" className="float-right" type="submit">
+                  Start
+                </Button>
               </ListGroup.Item>
               <ListGroup.Item>
                 {" "}
