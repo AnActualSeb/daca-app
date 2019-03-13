@@ -15,6 +15,7 @@ import { iosCopy } from "react-icons-kit/ionicons/iosCopy";
 import { socialUsd } from "react-icons-kit/ionicons/socialUsd";
 import { iosCheckmark } from "react-icons-kit/ionicons/iosCheckmark";
 import { iosPrinter } from "react-icons-kit/ionicons/iosPrinter";
+import { iosRainy } from "react-icons-kit/ionicons/iosRainy";
 
 const AppContainer = styled(BaseAppContainer)`
   height: 100%;
@@ -25,7 +26,7 @@ const AppContainer = styled(BaseAppContainer)`
 `;
 
 const Navigation = styled(BaseNavigation)`
-  background: #303641;
+  background: #323234;
   color: #8d97ad;
   font-size: 1em;
   letter-spacing: 2px;
@@ -35,7 +36,7 @@ const Navigation = styled(BaseNavigation)`
 `;
 
 const IconCnt = styled.div`
-  color: #6a56a5;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +70,7 @@ export default class SideNavBar extends React.Component {
             <Nav vertical id="1">
               <Link to="/" className="navLink">
                 <IconCnt style={{ float: "left" }}>
-                  <Icon icon={iosHome} />
+                  <Icon size={22} icon={iosHome} />
                 </IconCnt>
                 <Text>Dashboard</Text>
               </Link>
@@ -77,59 +78,68 @@ export default class SideNavBar extends React.Component {
             <Nav vertical id="2">
               <Link to="/yourinfo" className="navLink">
                 <IconCnt>
-                  <Icon icon={iosCopy} />
+                  <Icon size={22} icon={iosCopy} />
                 </IconCnt>
                 <Text>Collect Documents</Text>
               </Link>
             </Nav>
             <Nav id="3">
               <IconCnt>
-                <Icon icon={iosInformation} />
+                <Icon size={22} icon={iosInformation} />
               </IconCnt>
               <Text>Provide Your Information</Text>
             </Nav>
             <Nav id="4">
               <IconCnt>
-                <Icon icon={iosList} />
+                <Icon size={22} icon={iosList} />
               </IconCnt>
               <Text>Forms</Text>
               {/* Nested Forms here! */}
               <Nav id="1">
                 <IconCnt>
-                  <Icon icon={circleO} />
+                  <Icon size={22} icon={circleO} />
                 </IconCnt>
                 <Text>I-821D</Text>
               </Nav>
               <Nav id="2">
                 <IconCnt>
-                  <Icon icon={circleO} />
+                  <Icon size={22} icon={circleO} />
                 </IconCnt>
                 <Text>I-765</Text>
               </Nav>
               <Nav id="3">
                 <IconCnt>
-                  <Icon icon={circleO} />
+                  <Icon size={22} icon={circleO} />
                 </IconCnt>
                 <Text>I-765WS</Text>
               </Nav>
             </Nav>
             <Nav id="5">
               <IconCnt>
-                <Icon icon={socialUsd} />
+                <Icon size={22} icon={socialUsd} />
               </IconCnt>
               <Text>Prepare Payment</Text>
             </Nav>
             <Nav id="6">
               <IconCnt>
-                <Icon icon={iosCheckmark} />
+                <Icon size={22} icon={iosCheckmark} />
               </IconCnt>
               <Text>Review Application</Text>
             </Nav>
             <Nav id="7">
               <IconCnt>
-                <Icon icon={iosPrinter} />
+                <Icon size={22} icon={iosPrinter} />
               </IconCnt>
               <Text>Print and Mail</Text>
+            </Nav>
+
+            <Nav id="8">
+              <Link to="/Overview" className="navLink">
+                <IconCnt>
+                  <Icon size={64} icon={iosRainy} />
+                </IconCnt>
+                <Text>TEST</Text>
+              </Link>
             </Nav>
           </SideNav>
         </Navigation>
