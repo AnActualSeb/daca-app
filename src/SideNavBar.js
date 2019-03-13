@@ -3,9 +3,9 @@ import { SideNav, Nav } from "react-sidenav";
 import styled from "styled-components";
 import {
   AppContainer as BaseAppContainer,
-  ExampleNavigation as BaseNavigation,
-  ExampleBody as Body
+  ExampleNavigation as BaseNavigation
 } from "./containers";
+import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
 import { circleO } from "react-icons-kit/fa/circleO";
 import { iosHome } from "react-icons-kit/ionicons/iosHome";
@@ -17,7 +17,11 @@ import { iosCheckmark } from "react-icons-kit/ionicons/iosCheckmark";
 import { iosPrinter } from "react-icons-kit/ionicons/iosPrinter";
 
 const AppContainer = styled(BaseAppContainer)`
-  height: calc(100vh - 40px);
+  height: 100%;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: hidden;
+  max-width: 10rem;
 `;
 
 const Navigation = styled(BaseNavigation)`
@@ -25,8 +29,9 @@ const Navigation = styled(BaseNavigation)`
   color: #8d97ad;
   font-size: 1em;
   letter-spacing: 2px;
-  width: 240px;
+  width: 100%;
   line-height: 22px;
+  margin-left: 0px;
 `;
 
 const IconCnt = styled.div`
@@ -54,24 +59,28 @@ export default class SideNavBar extends React.Component {
 
   render() {
     return (
-      <AppContainer>
-        <Navigation>
+      <AppContainer style={{ marginLeft: "0px" }}>
+        <Navigation style={{ marginLeft: "0px" }}>
           <SideNav
             defaultSelectedPath="1"
             theme={theme}
             onItemSelection={this.onItemSelection}
           >
-            <Nav id="1">
-              <IconCnt>
-                <Icon icon={iosHome} />
-              </IconCnt>
-              <Text>Dashboard</Text>
+            <Nav vertical id="1">
+              <Link to="/" className="navLink">
+                <IconCnt style={{ float: "left" }}>
+                  <Icon icon={iosHome} />
+                </IconCnt>
+                <Text>Dashboard</Text>
+              </Link>
             </Nav>
-            <Nav id="2">
-              <IconCnt>
-                <Icon icon={iosCopy} />
-              </IconCnt>
-              <Text>Collect Documents</Text>
+            <Nav vertical id="2">
+              <Link to="/yourinfo" className="navLink">
+                <IconCnt>
+                  <Icon icon={iosCopy} />
+                </IconCnt>
+                <Text>Collect Documents</Text>
+              </Link>
             </Nav>
             <Nav id="3">
               <IconCnt>
@@ -124,7 +133,7 @@ export default class SideNavBar extends React.Component {
             </Nav>
           </SideNav>
         </Navigation>
-        <Body />
+        {/* <Body /> */}
       </AppContainer>
     );
   }
