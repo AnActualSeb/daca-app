@@ -16,19 +16,19 @@ class ReasonFor extends Component {
             type="radio"
             label="Initial permission to accept employment."
             name="yesNo"
-            id="yesNo7"
+            id="yesNo1"
           />
           <Form.Check
             type="radio"
             label="Replacement of lost, stolen, or damaged employment authorization document, or correction of my employment authorization document not due to U.S. Citizen and Immigration Services error. Note"
             name="yesNo"
-            id="yesNo8"
+            id="yesNo2"
           />
           <Form.Check
             type="radio"
             label="Renewal of my permission to accept employment. Attach a copy of your previous employment authorization document."
             name="yesNo"
-            id="yesNo9"
+            id="yesNo3"
           />
           <br />
           <Button variant="light" type="submit">
