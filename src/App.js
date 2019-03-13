@@ -17,6 +17,8 @@ import WrapUp from "./I765/WrapUp";
 import Overview from "./Overview";
 import StartI765 from "./I765/StartI765";
 import FinancialInfo from "./I765WS/FinancialInfo";
+import StartI765Ws from "./I765WS/StartI765Ws";
+import Print from "./Print";
 
 class App extends Component {
   render() {

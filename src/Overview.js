@@ -29,7 +29,11 @@ class Overview extends Component {
             </Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item>
-                <Icon icon={numberOne} size={32} />
+                <Icon
+                  icon={numberOne}
+                  size={32}
+                  style={{ paddingRight: "8px" }}
+                />
                 I-821D: Consideration for Deferred Action on Childhood Arrivals
               </ListGroup.Item>
               <ListGroup.Item>

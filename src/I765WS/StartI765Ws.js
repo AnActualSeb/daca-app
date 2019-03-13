@@ -10,7 +10,7 @@ class StartI765 extends Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">Let's fill out your I-765</h1>
+        <h1 className="text-center">Let's fill out your I-765WS</h1>
         <p className="text-center mb-4">
           This is the Application for Employment Authorization.
         </p>
