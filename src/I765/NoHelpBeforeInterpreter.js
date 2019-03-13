@@ -146,15 +146,21 @@ class NoHelpBeforeInterpreter extends Component {
             </Form.Group>
           </Form.Row>
 
-          <br />
-          <Button variant="light" type="submit">
-            Back
-          </Button>
-          <Button className="float-right" variant="primary" type="submit">
-            Continue
-          </Button>
+          <div className="bottomNav">
+            <Button size="lg" variant="light" type="submit">
+              Back
+            </Button>
+
+            <Button
+              size="lg"
+              className="float-right"
+              variant="primary"
+              type="submit"
+            >
+              Continue
+            </Button>
+          </div>
         </Form>
-        <br />
       </Container>
     );
   }

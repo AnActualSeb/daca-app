@@ -32,6 +32,7 @@ class App extends Component {
               <Route path="/yourinfo" component={YourInfo} />
               <Route path="/overview" component={Overview} />
               <Route path="/I765/eligibility" component={EligibilityCat} />
+              <Route path="/I765/LastArrival" component={LastArrival} />
             </Switch>
           </div>
         </Router>
