@@ -64,7 +64,7 @@ class Overview extends Component {
                 size={32}
                 style={{ paddingRight: "16px" }}
               />
-              Prepare payment to USCIS ($495){" "}
+              Prepare payment to USCIS ($495)
             </ListGroup.Item>
 
             <ListGroup.Item>
@@ -73,7 +73,7 @@ class Overview extends Component {
                 size={32}
                 style={{ paddingRight: "16px" }}
               />
-              Review application{" "}
+              Review application
             </ListGroup.Item>
             <ListGroup.Item>
               <Icon
@@ -81,7 +81,7 @@ class Overview extends Component {
                 size={32}
                 style={{ paddingRight: "16px" }}
               />
-              Print and mail application{" "}
+              Print and mail application
             </ListGroup.Item>
           </ListGroup>
         </Container>

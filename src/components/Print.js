@@ -19,12 +19,12 @@ class Print extends Component {
           DACA application process.{" "}
         </p>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" size="lg">
           Download and print
         </Button>
         <br />
         <br />
-        <Button variant="light" type="submit">
+        <Button variant="light" type="submit" size="lg">
           Back
         </Button>
 

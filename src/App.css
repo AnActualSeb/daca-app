@@ -59,3 +59,12 @@ p {
     font-size: 1em;
   }
 }
+
+.toolTip {
+  line-height: 0.1rem;
+}
+
+.bottomNav {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}

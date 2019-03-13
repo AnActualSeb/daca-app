@@ -30,16 +30,21 @@ class ReasonFor extends Component {
             name="yesNo"
             id="yesNo3"
           />
-          <br />
-          <Button variant="light" type="submit">
-            Back
-          </Button>
+          <div className="bottomNav">
+            <Button size="lg" variant="light" type="submit">
+              Back
+            </Button>
 
-          <Button className="float-right" variant="primary" type="submit">
-            Continue
-          </Button>
+            <Button
+              size="lg"
+              className="float-right"
+              variant="primary"
+              type="submit"
+            >
+              Continue
+            </Button>
+          </div>
         </Form>
-        <br />
       </Container>
     );
   }

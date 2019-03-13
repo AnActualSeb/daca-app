@@ -78,7 +78,7 @@ class TodoList extends Component {
         <br />
 
         <Container className="d-flex justify-content-center">
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" size="lg">
             Pick up where I left off
           </Button>
         </Container>
