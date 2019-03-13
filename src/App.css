@@ -10,6 +10,11 @@ h3 {
   padding-top: 1rem;
 }
 
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
 p {
   padding-top: 1rem;
 }

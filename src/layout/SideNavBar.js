@@ -67,22 +67,22 @@ export default class SideNavBar extends React.Component {
             theme={theme}
             onItemSelection={this.onItemSelection}
           >
-            <Nav vertical id="1">
-              <Link to="/" className="navLink">
+            <Link to="/" className="navLink">
+              <Nav vertical id="1">
                 <IconCnt style={{ float: "left" }}>
                   <Icon size={22} icon={iosHome} />
                 </IconCnt>
                 <Text>Dashboard</Text>
-              </Link>
-            </Nav>
-            <Nav vertical id="2">
-              <Link to="/yourinfo" className="navLink">
+              </Nav>
+            </Link>
+            <Link to="/yourinfo" className="navLink">
+              <Nav vertical id="2">
                 <IconCnt>
                   <Icon size={22} icon={iosCopy} />
                 </IconCnt>
                 <Text>Collect Documents</Text>
-              </Link>
-            </Nav>
+              </Nav>
+            </Link>
             <Nav id="3">
               <IconCnt>
                 <Icon size={22} icon={iosInformation} />
@@ -134,7 +134,7 @@ export default class SideNavBar extends React.Component {
             </Nav>
 
             <Nav id="8">
-              <Link to="/Overview" className="navLink">
+              <Link to="I765/lastarrival" className="navLink">
                 <IconCnt>
                   <Icon size={64} icon={iosRainy} />
                 </IconCnt>
