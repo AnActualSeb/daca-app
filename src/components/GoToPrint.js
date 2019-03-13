@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { documentText } from "react-icons-kit/ionicons/documentText";
+import { Link } from "react-router-dom";
 
 import { Icon } from "react-icons-kit";
 
@@ -104,9 +105,15 @@ class GoToPrint extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Print and mail application
-                <Button variant="primary" className="float-right" type="submit">
-                  Start
-                </Button>
+                <Link to="/print">
+                  <Button
+                    variant="primary"
+                    className="float-right"
+                    type="submit"
+                  >
+                    Start
+                  </Button>
+                </Link>
               </ListGroup.Item>
             </ListGroup>
           </Card>
