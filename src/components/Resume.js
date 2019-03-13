@@ -11,16 +11,12 @@ class Resume extends Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">Welcome back [name]. Keep going!</h1>
+        <h1 className="text-center">Welcome back Citlali. Keep going!</h1>
         <p className="text-center mb-4">
           We've saved all your information and progress so you can pick up right
           where you left off.
         </p>
-        <Container className="d-flex justify-content-center">
-          <Button variant="primary" type="submit" className="mb-4 mt-4">
-            Pick up where I left off
-          </Button>
-        </Container>
+
         <Container className="d-flex justify-content-center mt-4">
           <Card style={{ width: "50rem" }}>
             <Card.Header className="text-center" as="h3">
@@ -49,35 +45,13 @@ class Resume extends Component {
               </ListGroup.Item>
               <ListGroup.Item>
                 USCIS Forms
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                >
-                  Resume
+                <Button variant="primary" className="float-right" type="submit">
+                  Pick up where I left off
                 </Button>
               </ListGroup.Item>
-              <ListGroup.Item>
-                Review application
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                >
-                  Start
-                </Button>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                Print and mail application
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                  size="lg"
-                >
-                  Start
-                </Button>
-              </ListGroup.Item>
+              <ListGroup.Item>Prepare payment</ListGroup.Item>
+              <ListGroup.Item>Review application</ListGroup.Item>
+              <ListGroup.Item>Print and mail application</ListGroup.Item>
             </ListGroup>
           </Card>
         </Container>
