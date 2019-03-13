@@ -73,6 +73,7 @@ class Resume extends Component {
                   variant="outline-primary"
                   className="float-right"
                   type="submit"
+                  size="lg"
                 >
                   Start
                 </Button>
