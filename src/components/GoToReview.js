@@ -83,8 +83,12 @@ class GoToReview extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Prepare payment to USCIS ($495)
-                <Button variant="primary" className="float-right" type="submit">
-                  Start
+                <Button
+                  variant="outline-primary"
+                  className="float-right"
+                  type="submit"
+                >
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
