@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 class ReasonFor extends Component {
   render() {
@@ -34,15 +35,16 @@ class ReasonFor extends Component {
             <Button size="lg" variant="light" type="submit">
               Back
             </Button>
-
-            <Button
-              size="lg"
-              className="float-right"
-              variant="primary"
-              type="submit"
-            >
-              Continue
-            </Button>
+            <Link to="lastarrival">
+              <Button
+                size="lg"
+                className="float-right"
+                variant="primary"
+                type="submit"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </Form>
       </Container>

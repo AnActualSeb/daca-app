@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 class EligibilityCat extends Component {
   render() {
@@ -38,15 +39,16 @@ class EligibilityCat extends Component {
             <Button size="lg" variant="light" type="submit">
               Back
             </Button>
-
-            <Button
-              size="lg"
-              className="float-right"
-              variant="primary"
-              type="submit"
-            >
-              Continue
-            </Button>
+            <Link to="/nohelpbeforeinterpreter">
+              <Button
+                size="lg"
+                className="float-right"
+                variant="primary"
+                type="submit"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </Form>
       </Container>

@@ -7,6 +7,7 @@ import FormControl from "react-bootstrap/FormControl";
 import Col from "react-bootstrap/Col";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import { Link } from "react-router-dom";
 
 const recordNumber = (
   <Popover id="popover-basic" title="Form I-94 arrival-departure record number">
@@ -157,15 +158,16 @@ class LastArrival extends Component {
             <Button size="lg" variant="light" type="submit">
               Back
             </Button>
-
-            <Button
-              size="lg"
-              className="float-right"
-              variant="primary"
-              type="submit"
-            >
-              Continue
-            </Button>
+            <Link to="/nohelpbeforeinterpreter">
+              <Button
+                size="lg"
+                className="float-right"
+                variant="primary"
+                type="submit"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </Form>
       </Container>

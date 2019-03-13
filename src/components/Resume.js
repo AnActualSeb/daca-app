@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { documentText } from "react-icons-kit/ionicons/documentText";
+import { Link } from "react-router-dom";
 
 import { Icon } from "react-icons-kit";
 
@@ -69,9 +70,15 @@ class Resume extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 USCIS Forms
-                <Button variant="primary" className="float-right" type="submit">
-                  Pick up where I left off
-                </Button>
+                <Link to="/starti765">
+                  <Button
+                    variant="primary"
+                    className="float-right"
+                    type="submit"
+                  >
+                    Pick up where I left off
+                  </Button>
+                </Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Icon

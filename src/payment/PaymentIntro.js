@@ -8,6 +8,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import money from "./money.png";
+import { Link } from "react-router-dom";
 
 export default class PaymentIntro extends Component {
   render() {
@@ -26,14 +27,16 @@ export default class PaymentIntro extends Component {
           options.
         </p>
         <div className="bottomNav">
-          <Button
-            size="lg"
-            className="float-right"
-            variant="primary"
-            type="submit"
-          >
-            Continue
-          </Button>
+          <Link to="/payment">
+            <Button
+              size="lg"
+              className="float-right"
+              variant="primary"
+              type="submit"
+            >
+              Continue
+            </Button>
+          </Link>
         </div>
       </Container>
     );

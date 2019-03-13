@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Review from "./review.png";
+import { Link } from "react-router-dom";
 
 class ReviewMe extends Component {
   constructor(props) {
@@ -96,15 +97,16 @@ class ReviewMe extends Component {
             <Button size="lg" variant="light" type="submit">
               Back
             </Button>
-
-            <Button
-              size="lg"
-              className="float-right"
-              variant="primary"
-              type="submit"
-            >
-              Continue
-            </Button>
+            <Link to="/gotoprint">
+              <Button
+                size="lg"
+                className="float-right"
+                variant="primary"
+                type="submit"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </Form>
       </Container>

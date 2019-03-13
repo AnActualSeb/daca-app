@@ -7,6 +7,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import { Link } from "react-router-dom";
 
 class NoHelpBeforeInterpreter extends Component {
   render() {
@@ -150,15 +151,16 @@ class NoHelpBeforeInterpreter extends Component {
             <Button size="lg" variant="light" type="submit">
               Back
             </Button>
-
-            <Button
-              size="lg"
-              className="float-right"
-              variant="primary"
-              type="submit"
-            >
-              Continue
-            </Button>
+            <Link to="/starti765ws">
+              <Button
+                size="lg"
+                className="float-right"
+                variant="primary"
+                type="submit"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </Form>
       </Container>

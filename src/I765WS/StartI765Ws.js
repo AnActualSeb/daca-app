@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { Link } from "react-router-dom";
 
 class StartI765 extends Component {
   render() {
@@ -14,13 +15,15 @@ class StartI765 extends Component {
         <p className="text-center mb-4">
           This is the Worksheet for Employment Authorization.
         </p>
-        <Button
-          variant="primary"
-          className="float-right mt-4 mb-4"
-          type="submit"
-        >
-          Continue
-        </Button>
+        <Link to="/gotopay">
+          <Button
+            variant="primary"
+            className="float-right mt-4 mb-4"
+            type="submit"
+          >
+            Continue
+          </Button>
+        </Link>
       </Container>
     );
   }

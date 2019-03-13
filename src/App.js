@@ -27,6 +27,10 @@ import Home from "./components/Home";
 import PaymentIntro from "./payment/PaymentIntro";
 import SidebarProvider from "./SidebarProvider";
 import Payment from "./payment/Payment";
+import GoToPay from "./components/GoToPay";
+import GoToReview from "./components/GoToReview";
+import ReviewMe from "./components/ReviewMe";
+import GoToPrint from "./components/GoToPrint";
 
 class App extends Component {
   constructor(props) {
@@ -53,10 +57,26 @@ class App extends Component {
               <Route path="/resume" component={Resume} />
               <Route path="/todolist" component={TodoList} />
               <Route path="/yourinfo" component={YourInfo} />
-              <Route path="/I765/lastarrival" component={LastArrival} />
+              <Route path="lastarrival" component={LastArrival} />
               <Route path="components/print" component={Print} />
               <Route path="/startpayment" component={PaymentIntro} />
               <Route path="/payment/payment" component={PaymentIntro} />
+              <Route path="/starti765" component={StartI765} />
+              <Route path="/reasonfor" component={ReasonFor} />
+              <Route path="/lastarrival" component={LastArrival} />
+              <Route path="/eligibilitycat" component={EligibilityCat} />
+              <Route
+                path="/nohelpbeforeinterpreter"
+                component={NoHelpBeforeInterpreter}
+              />
+              <Route path="/starti765ws" component={StartI765Ws} />
+              <Route path="/gotopay" component={GoToPay} />
+              <Route path="/paymentintro" component={PaymentIntro} />
+              <Route path="/payment" component={Payment} />
+              <Route path="/review" component={GoToReview} />
+              <Route path="/reviewme" component={ReviewMe} />
+              <Route path="/gotoprint" component={GoToPrint} />
+              <Route path="/print" component={Print} />
             </Switch>
           </div>
         </Router>

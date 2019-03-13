@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { documentText } from "react-icons-kit/ionicons/documentText";
+import { Link } from "react-router-dom";
 
 import { Icon } from "react-icons-kit";
 
@@ -95,9 +96,15 @@ class GoToReview extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Review application
-                <Button variant="primary" className="float-right" type="submit">
-                  Start
-                </Button>
+                <Link to="reviewme">
+                  <Button
+                    variant="primary"
+                    className="float-right"
+                    type="submit"
+                  >
+                    Start
+                  </Button>
+                </Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 {" "}
