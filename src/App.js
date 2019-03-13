@@ -18,6 +18,7 @@ import StartI765 from "./I765/StartI765";
 import FinancialInfo from "./I765WS/FinancialInfo";
 import StartI765Ws from "./I765WS/StartI765Ws";
 import Print from "./components/Print";
+import Home from "./components/Home";
 
 class App extends Component {
   render() {
@@ -25,11 +26,15 @@ class App extends Component {
       <div>
         <Router>
           <div className="mainContent">
+            {/* {this.props.path="/home" ?
+              <Route path="/home" component={home} />
+            } */}
             <SideNavBar className="sidebar" />
             <Switch>
-              <Route exact path="/" component={TodoList} />
-              <Route path="/yourinfo" component={YourInfo} />
               <Route path="/overview" component={Overview} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/todolist" component={TodoList} />
+              <Route path="/yourinfo" component={YourInfo} />
               <Route path="/I765/lastarrival" component={LastArrival} />
               <Route path="components/print" component={Print} />
             </Switch>

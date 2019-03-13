@@ -7,8 +7,8 @@ import {
 } from "./containers";
 import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
-import { circleO } from "react-icons-kit/fa/circleO";
-import { iosHome } from "react-icons-kit/ionicons/iosHome";
+import { documentText } from "react-icons-kit/ionicons/documentText";
+import { grid } from "react-icons-kit/ionicons/grid";
 import { iosInformation } from "react-icons-kit/ionicons/iosInformation";
 import { iosList } from "react-icons-kit/ionicons/iosList";
 import { iosCopy } from "react-icons-kit/ionicons/iosCopy";
@@ -69,26 +69,26 @@ export default class SideNavBar extends React.Component {
           >
             <Link to="/" className="navLink">
               <Nav vertical id="1">
-                <IconCnt style={{ float: "left" }}>
-                  <Icon size={22} icon={iosHome} />
+                <IconCnt>
+                  <Icon size={22} icon={grid} />
                 </IconCnt>
                 <Text>Dashboard</Text>
               </Nav>
             </Link>
+            <Nav vertical id="2">
+              <IconCnt>
+                <Icon size={22} icon={iosCopy} />
+              </IconCnt>
+              <Text>Collect Documents</Text>
+            </Nav>
             <Link to="/yourinfo" className="navLink">
-              <Nav vertical id="2">
+              <Nav id="3">
                 <IconCnt>
-                  <Icon size={22} icon={iosCopy} />
+                  <Icon size={22} icon={iosInformation} />
                 </IconCnt>
-                <Text>Collect Documents</Text>
+                <Text>Provide Your Information</Text>
               </Nav>
             </Link>
-            <Nav id="3">
-              <IconCnt>
-                <Icon size={22} icon={iosInformation} />
-              </IconCnt>
-              <Text>Provide Your Information</Text>
-            </Nav>
             <Nav id="4">
               <IconCnt>
                 <Icon size={22} icon={iosList} />
@@ -97,19 +97,19 @@ export default class SideNavBar extends React.Component {
               {/* Nested Forms here! */}
               <Nav id="1">
                 <IconCnt>
-                  <Icon size={22} icon={circleO} />
+                  <Icon size={22} icon={documentText} />
                 </IconCnt>
                 <Text>I-821D</Text>
               </Nav>
               <Nav id="2">
                 <IconCnt>
-                  <Icon size={22} icon={circleO} />
+                  <Icon size={22} icon={documentText} />
                 </IconCnt>
                 <Text>I-765</Text>
               </Nav>
               <Nav id="3">
                 <IconCnt>
-                  <Icon size={22} icon={circleO} />
+                  <Icon size={22} icon={documentText} />
                 </IconCnt>
                 <Text>I-765WS</Text>
               </Nav>
@@ -120,12 +120,14 @@ export default class SideNavBar extends React.Component {
               </IconCnt>
               <Text>Prepare Payment</Text>
             </Nav>
-            <Nav id="6">
-              <IconCnt>
-                <Icon size={22} icon={iosCheckmark} />
-              </IconCnt>
-              <Text>Review Application</Text>
-            </Nav>
+            <Link to="/resume" className="navLink">
+              <Nav id="6">
+                <IconCnt>
+                  <Icon size={22} icon={iosCheckmark} />
+                </IconCnt>
+                <Text>Review Application</Text>
+              </Nav>
+            </Link>
             <Nav id="7">
               <IconCnt>
                 <Icon size={22} icon={iosPrinter} />
