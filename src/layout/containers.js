@@ -36,6 +36,7 @@ export const Title = styled.div`
 `;
 
 export const ExampleContainer = styled.div`
+  width: 100%;
   background: #fff;
   border: 1px solid #e5e5e5;
   padding-left: 0px;

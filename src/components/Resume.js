@@ -81,10 +81,6 @@ class Resume extends Component {
             </ListGroup>
           </Card>
         </Container>
-
-        <br />
-
-        <br />
       </Container>
     );
   }

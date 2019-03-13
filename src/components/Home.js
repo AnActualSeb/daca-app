@@ -1,32 +1,44 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap/";
-
-const StyledNavbar = styled(Navbar)`
-  width: 100%;
-  padding-left: 0px;
-  margin-left: 0px;
-  display: hidden;
-`;
+import SignInButton from "./SignInButton";
+import SignUpButton from "./SignUpButton";
+import {
+  Navbar,
+  Nav,
+  Form,
+  FormControl,
+  Button,
+  Jumbotron
+} from "react-bootstrap/";
 
 export default class Home extends Component {
   render() {
     return (
-      <div>
-        <StyledNavbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-info">Search</Button>
-          </Form>
-        </StyledNavbar>
+      <div style={{ style: "none" }}>
+        <Navbar bg="dark" variant="dark" expand="lg">
+          <Container>
+            <Navbar.Brand href="#home">Maravilla</Navbar.Brand>
+            <Form inline>
+              <div className="homeButtons">
+                <SignInButton />
+                <SignUpButton />
+              </div>
+            </Form>
+          </Container>
+        </Navbar>
         <Container />
+        <Jumbotron>
+          <h1>Complicated forms made easy</h1>
+          <p>
+            This is a site that helps you apply to DACA. It saves your progress
+            as you complete your DACA application, without any of the confusing
+            jargon.
+          </p>
+          <p>
+            <Button variant="primary">Learn more</Button>
+          </p>
+        </Jumbotron>
       </div>
     );
   }
