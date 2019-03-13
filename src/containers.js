@@ -2,8 +2,17 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div`
   display: flex;
-  height: 100%;
   width: 100%;
+  padding-left: 0px;
+  margin-left: 0px;
+`;
+
+export const container = styled.div`
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: 0px;
 `;
 
 export const Navigation = styled.div`
@@ -15,7 +24,8 @@ export const Navigation = styled.div`
 `;
 export const Body = styled.div`
   padding: 12px;
-  height: 100vh;
+  padding-left: 0px;
+  justify-content: stretch;
 `;
 
 export const Title = styled.div`
@@ -28,17 +38,20 @@ export const Title = styled.div`
 export const ExampleContainer = styled.div`
   background: #fff;
   border: 1px solid #e5e5e5;
-  height: calc(100vh - 40px);
+  padding-left: 0px;
+  margin-left: 0px;
 `;
 
 export const ExampleNavigation = styled(Navigation)`
-  height: 100%;
   margin-right: 4px;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-left: 0px;
 `;
 
 export const ExampleBody = styled.div`
   background: #fff;
   padding: 12px;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-left: 0px;
+  margin-left: 0px;
 `;
