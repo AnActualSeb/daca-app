@@ -26,6 +26,7 @@ import Print from "./components/Print";
 import Home from "./components/Home";
 import PaymentIntro from "./payment/PaymentIntro";
 import SidebarProvider from "./SidebarProvider";
+import Payment from "./payment/Payment";
 
 class App extends Component {
   constructor(props) {
@@ -55,6 +56,7 @@ class App extends Component {
               <Route path="/I765/lastarrival" component={LastArrival} />
               <Route path="components/print" component={Print} />
               <Route path="/startpayment" component={PaymentIntro} />
+              <Route path="/payment/payment" component={PaymentIntro} />
             </Switch>
           </div>
         </Router>

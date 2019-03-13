@@ -7,20 +7,25 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { documentText } from "react-icons-kit/ionicons/documentText";
 
+import { Icon } from "react-icons-kit";
+
+import { iosInformationOutline } from "react-icons-kit/ionicons/iosInformationOutline";
+import { iosListOutline } from "react-icons-kit/ionicons/iosListOutline";
+import { iosContactOutline } from "react-icons-kit/ionicons/iosContactOutline";
+import { socialUsdOutline } from "react-icons-kit/ionicons/socialUsdOutline";
+import { iosCheckmarkOutline } from "react-icons-kit/ionicons/iosCheckmarkOutline";
+import { iosPrinterOutline } from "react-icons-kit/ionicons/iosPrinterOutline";
+
 class Resume extends Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">Welcome back [name]. Keep going!</h1>
+        <h1 className="text-center">Welcome back Citlali. Keep going!</h1>
         <p className="text-center mb-4">
           We've saved all your information and progress so you can pick up right
           where you left off.
         </p>
-        <Container className="d-flex justify-content-center">
-          <Button variant="primary" type="submit" className="mb-4 mt-4">
-            Pick up where I left off
-          </Button>
-        </Container>
+
         <Container className="d-flex justify-content-center mt-4">
           <Card style={{ width: "50rem" }}>
             <Card.Header className="text-center" as="h3">
@@ -28,6 +33,11 @@ class Resume extends Component {
             </Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item variant="success">
+                <Icon
+                  icon={iosInformationOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
                 Collect documents
                 <Button
                   variant="outline-success"
@@ -38,7 +48,12 @@ class Resume extends Component {
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item variant="success">
-                Your information
+                <Icon
+                  icon={iosListOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
+                Provide your information
                 <Button
                   variant="outline-success"
                   className="float-right"
@@ -48,35 +63,41 @@ class Resume extends Component {
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
+                <Icon
+                  icon={iosContactOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
                 USCIS Forms
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                >
-                  Resume
+                <Button variant="primary" className="float-right" type="submit">
+                  Pick up where I left off
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item>
+                <Icon
+                  icon={socialUsdOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
+                Prepare payment to USCIS ($495)
+              </ListGroup.Item>
+              <ListGroup.Item>
+                {" "}
+                <Icon
+                  icon={iosCheckmarkOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
                 Review application
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                >
-                  Start
-                </Button>
               </ListGroup.Item>
               <ListGroup.Item>
+                {" "}
+                <Icon
+                  icon={iosPrinterOutline}
+                  size={32}
+                  style={{ paddingRight: "16px" }}
+                />
                 Print and mail application
-                <Button
-                  variant="outline-primary"
-                  className="float-right"
-                  type="submit"
-                  size="lg"
-                >
-                  Start
-                </Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>

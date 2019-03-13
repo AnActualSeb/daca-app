@@ -136,7 +136,7 @@ export default class SideNavBar extends React.Component {
             </Nav>
 
             <Nav id="8">
-              <Link to="/startpayment" className="navLink">
+              <Link to="/payment/payment" className="navLink">
                 <IconCnt>
                   <Icon size={64} icon={iosRainy} />
                 </IconCnt>
