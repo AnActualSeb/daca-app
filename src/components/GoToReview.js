@@ -85,7 +85,7 @@ class GoToReview extends Component {
                 />
                 Prepare payment to USCIS ($495)
                 <Button
-                  variant="outline-primary"
+                  variant="outline-success"
                   className="float-right"
                   type="submit"
                 >

@@ -21,7 +21,7 @@ class NoHelpBeforeInterpreter extends Component {
           </p>
           <Form.Check type="radio" label="Yes" name="yesNo" id="yesNo1" />
           <Form.Check type="radio" label="No" name="yesNo" id="yesNo2" />
-          <h2>Please have your interpreter fill out the following section </h2>
+          {/* <h2>Please have your interpreter fill out the following section </h2>
           <h3>1. Interpreter's full name</h3>
           <Form.Row>
             <Form.Group as={Col} md="5" controlId="formGridEmail">
@@ -145,7 +145,7 @@ class NoHelpBeforeInterpreter extends Component {
               </Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-          </Form.Row>
+          </Form.Row> */}
 
           <div className="bottomNav">
             <Button size="lg" variant="light" type="submit">

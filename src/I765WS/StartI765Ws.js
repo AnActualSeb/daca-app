@@ -15,7 +15,7 @@ class StartI765 extends Component {
         <p className="text-center mb-4">
           This is the Worksheet for Employment Authorization.
         </p>
-        <Link to="/gotopay">
+        <Link to="/financialinfo">
           <Button
             variant="primary"
             className="float-right mt-4 mb-4"

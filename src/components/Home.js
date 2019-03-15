@@ -29,15 +29,17 @@ export default class Home extends Component {
         </Navbar>
         <Container />
         <Jumbotron>
-          <h1>Complicated forms made easy</h1>
-          <p>
-            This is a site that helps you apply to DACA. It saves your progress
-            as you complete your DACA application, without any of the confusing
-            jargon.
-          </p>
-          <p>
-            <Button variant="primary">Learn more</Button>
-          </p>
+          <Container>
+            <h1>Complicated forms made easy</h1>
+            <p>
+              This is a site that helps you apply to DACA. It saves your
+              progress as you complete your DACA application, without any of the
+              confusing jargon.
+            </p>
+            <p>
+              <Button variant="primary">Learn more</Button>
+            </p>
+          </Container>
         </Jumbotron>
       </div>
     );

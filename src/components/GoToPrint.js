@@ -84,8 +84,12 @@ class GoToPrint extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Prepare payment to USCIS ($495)
-                <Button variant="primary" className="float-right" type="submit">
-                  Start
+                <Button
+                  variant="outline-success"
+                  className="float-right"
+                  type="submit"
+                >
+                  Review
                 </Button>
               </ListGroup.Item>
               <ListGroup.Item variant="success">
@@ -96,8 +100,15 @@ class GoToPrint extends Component {
                   style={{ paddingRight: "16px" }}
                 />
                 Review application
+                <Button
+                  variant="outline-success"
+                  className="float-right"
+                  type="submit"
+                >
+                  Review
+                </Button>
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item variant="success">
                 {" "}
                 <Icon
                   icon={iosPrinterOutline}
@@ -111,7 +122,7 @@ class GoToPrint extends Component {
                     className="float-right"
                     type="submit"
                   >
-                    Start
+                    Done!
                   </Button>
                 </Link>
               </ListGroup.Item>

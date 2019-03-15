@@ -6,9 +6,7 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-import { Link } from "react-router-dom";
 import YourInfo from "./yourInfo/YourInfo";
-import Container from "react-bootstrap/Container";
 import SideNavBar from "./layout/SideNavBar";
 import TodoList from "./components/TodoList";
 import ReasonFor from "./I765/ReasonFor";
@@ -70,6 +68,7 @@ class App extends Component {
                 component={NoHelpBeforeInterpreter}
               />
               <Route path="/starti765ws" component={StartI765Ws} />
+              <Route path="/financialinfo" component={FinancialInfo} />
               <Route path="/gotopay" component={GoToPay} />
               <Route path="/paymentintro" component={PaymentIntro} />
               <Route path="/payment" component={Payment} />
