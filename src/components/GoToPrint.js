@@ -108,7 +108,7 @@ class GoToPrint extends Component {
                   Review
                 </Button>
               </ListGroup.Item>
-              <ListGroup.Item variant="success">
+              <ListGroup.Item>
                 {" "}
                 <Icon
                   icon={iosPrinterOutline}

@@ -33,15 +33,15 @@ class YourInfo extends Component {
       views.push(
         <div>
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="formGridEmail">
+            <Form.Group as={Col} md="5" controlId="firstName">
               <Form.Label>First name (given name)</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group as={Col} md="2" controlId="formGridPassword">
+            <Form.Group as={Col} md="2" controlId="midName">
               <Form.Label>Middle name</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group as={Col} md="5" controlId="formGridPassword">
+            <Form.Group as={Col} md="5" controlId="lastName">
               <Form.Label>Last name (family name)</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
@@ -95,15 +95,15 @@ class YourInfo extends Component {
           <h2>1. Legal name</h2>
 
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="formGridEmail">
+            <Form.Group as={Col} md="5" controlId="givenName">
               <Form.Label>First name (given name)</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group as={Col} md="2" controlId="formGridPassword">
+            <Form.Group as={Col} md="2" controlId="middleName">
               <Form.Label>Middle name</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group as={Col} md="5" controlId="formGridPassword">
+            <Form.Group as={Col} md="5" controlId="familyName">
               <Form.Label>Last name (family name)</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
@@ -143,15 +143,15 @@ class YourInfo extends Component {
                     aliases, maiden name, or nicknames.
                   </p>
                   <Form.Row>
-                    <Form.Group as={Col} md="5" controlId="formGridEmail">
+                    <Form.Group as={Col} md="5" controlId="addFirstName">
                       <Form.Label>First name (given name)</Form.Label>
                       <Form.Control type="email" />
                     </Form.Group>
-                    <Form.Group as={Col} md="2" controlId="formGridPassword">
+                    <Form.Group as={Col} md="2" controlId="addMidName">
                       <Form.Label>Middle name</Form.Label>
                       <Form.Control type="password" />
                     </Form.Group>
-                    <Form.Group as={Col} md="5" controlId="formGridPassword">
+                    <Form.Group as={Col} md="5" controlId="addLastName">
                       <Form.Label>Last name (family name)</Form.Label>
                       <Form.Control type="password" />
                     </Form.Group>
@@ -174,25 +174,25 @@ class YourInfo extends Component {
 
           <h2>2. Birth information</h2>
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="legalName">
+            <Form.Group as={Col} md="5" controlId="dateOfBirth">
               <Form.Label>Date of birth</Form.Label>
               <Form.Control as="input" type="date" />
               <Form.Text className="text-muted">mm/dd/yyyy </Form.Text>
             </Form.Group>
           </Form.Row>
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="formGridEmail">
+            <Form.Group as={Col} md="5" controlId="stateOfBirth">
               <Form.Label>State/province of birth</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-            <Form.Group as={Col} md="5" controlId="formGridPassword">
+            <Form.Group as={Col} md="5" controlId="countryOfBirth">
               <Form.Label>Country of birth</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
           </Form.Row>
 
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="legalName">
+            <Form.Group as={Col} md="5" controlId="citizenshipCountry">
               <Form.Label>Country of citizenship or nationality</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
@@ -229,7 +229,7 @@ class YourInfo extends Component {
                     nationality.
                   </p>
                   <Form.Row>
-                    <Form.Group as={Col} md="5" controlId="country">
+                    <Form.Group as={Col} md="5" controlId="addCountry">
                       <Form.Label>
                         Country of citizenship or nationality
                       </Form.Label>
@@ -260,13 +260,13 @@ class YourInfo extends Component {
               <Form.Label>Daytime telephone number</Form.Label>
               <Form.Control as="input" type="tel" />
             </Form.Group>
-            <Form.Group as={Col} md="5" controlId="legalName">
+            <Form.Group as={Col} md="5" controlId="mobile">
               <Form.Label>Mobile telephone number</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
           </Form.Row>
           <Form.Row>
-            <Form.Group as={Col} md="5" controlId="legalName">
+            <Form.Group as={Col} md="5" controlId="email">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="text" />
             </Form.Group>

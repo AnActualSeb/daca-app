@@ -114,13 +114,15 @@ export default class SideNavBar extends React.Component {
                 <Text>I-765WS</Text>
               </Nav>
             </Nav>
-            <Nav id="5">
-              <IconCnt>
-                <Icon size={22} icon={socialUsd} />
-              </IconCnt>
-              <Text>Prepare Payment</Text>
-            </Nav>
-            <Link to="/resume" className="navLink">
+            <Link to="/gotopay" className="navLink">
+              <Nav id="5">
+                <IconCnt>
+                  <Icon size={22} icon={socialUsd} />
+                </IconCnt>
+                <Text>Prepare Payment</Text>
+              </Nav>
+            </Link>
+            <Link to="/review" className="navLink">
               <Nav id="6">
                 <IconCnt>
                   <Icon size={22} icon={iosCheckmark} />
