@@ -21,7 +21,11 @@ const recordNumber = (
 );
 
 const exampleStatus = (
-  <Popover id="popover-basic" title="Examples of status">
+  <Popover
+    aria-describedby="Examples of immigration status"
+    id="popover-basic"
+    title="Examples of status"
+  >
     <ul>
       <li>B-2 visitor</li>
       <li>F-1 student</li>
@@ -31,7 +35,11 @@ const exampleStatus = (
 );
 
 const exampleStatusTwo = (
-  <Popover id="popover-basic" title="Examples of status">
+  <Popover
+    aria-describedby="Examples of status"
+    id="popover-basic"
+    title="Examples of status"
+  >
     <ul>
       <li>B-2 visitor</li>
       <li>F-1 student</li>
@@ -43,7 +51,11 @@ const exampleStatusTwo = (
 );
 
 const travelDoc = (
-  <Popover id="popover-basic" title="Travel document number">
+  <Popover
+    id="popover-basic"
+    aria-describedby="Travel document"
+    title="Travel document number"
+  >
     This can be you passport number from another country.
   </Popover>
 );
@@ -101,11 +113,11 @@ class LastArrival extends Component {
           <h1>Information about your last arrival in the U.S.</h1>
           <h2>1. Details</h2>
 
-          <Form.Group as={Col} md="5" controlId="formGridEmail">
+          <Form.Group as={Col} md="5" controlId="placeLastArrival">
             <Form.Label>Place of your last arrival into the U.S.</Form.Label>
-            <Form.Control type="text" />
+            <Form.Control type="text" aria-labelledby="placeLastArrival" />
           </Form.Group>
-          <Form.Group as={Col} md="5" controlId="formGridPassword">
+          <Form.Group as={Col} md="5" controlId="dateLastArrival">
             <Form.Label>
               Date of your last arrival into the U.S. (on or about)
             </Form.Label>
@@ -114,13 +126,13 @@ class LastArrival extends Component {
 
           <h2>2. Status at last arrival</h2>
 
-          <Form.Group as={Col} md="5" controlId="formGridEmail">
+          <Form.Group as={Col} md="5" controlId="statusLastArrival">
             <Form.Label>
               Immigration status at your last arrival <Example1 />
             </Form.Label>
             <Form.Control type="text" />
           </Form.Group>
-          <Form.Group as={Col} md="5" controlId="formGridPassword">
+          <Form.Group as={Col} md="5" controlId="currentStatus">
             <Form.Label>
               Your current immigration status or category <Example2 />
             </Form.Label>
@@ -129,29 +141,34 @@ class LastArrival extends Component {
 
           <h2>3. Document numbers</h2>
 
-          <Form.Group as={Col} md="6" controlId="formGridEmail">
+          <Form.Group as={Col} md="6" controlId="I94">
             <Form.Label>
               Form I-94 arrival-departure record number (if any) <Help />
             </Form.Label>
             <Form.Control type="text" />
           </Form.Group>
-          <Form.Group as={Col} md="5" controlId="formGridPassword">
+          <Form.Group as={Col} md="5" controlId="travelDocNum">
             <Form.Label>
               Travel document number (if any) <HelpTravel />
             </Form.Label>
             <Form.Control type="text" />
           </Form.Group>
 
-          <Form.Label className="ml-3">
+          <label htmlFor="sevisNum" className="ml-3">
+            {" "}
             Student and Exchange Visitor Information System (SEVIS) number (if
             any) <HelpTravel2 />
-          </Form.Label>
+          </label>
 
           <InputGroup as={Col} md="5" ml="3">
             <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">N - </InputGroup.Text>
+              <InputGroup.Text id="sevisNumN">N - </InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl type="text" />
+            <FormControl
+              type="text"
+              id="sevisNum"
+              aria-describedby="sevisNumN"
+            />
           </InputGroup>
 
           <div className="bottomNav">

@@ -67,7 +67,7 @@ export default class SideNavBar extends React.Component {
             theme={theme}
             onItemSelection={this.onItemSelection}
           >
-            <Link to="/" className="navLink">
+            <Link to="/resume" className="navLink">
               <Nav vertical id="1">
                 <IconCnt>
                   <Icon size={22} icon={grid} />
