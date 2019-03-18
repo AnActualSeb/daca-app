@@ -122,7 +122,7 @@ class GoToPrint extends Component {
                     className="float-right"
                     type="submit"
                   >
-                    Done!
+                    Finish!
                   </Button>
                 </Link>
               </ListGroup.Item>

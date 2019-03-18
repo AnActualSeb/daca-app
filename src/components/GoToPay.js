@@ -28,6 +28,7 @@ class GoToPay extends Component {
 
         <Container className="d-flex justify-content-center mt-4">
           <Card style={{ width: "50rem" }}>
+            {/* Wave considers the following line bad semantics. It thinks that the header is an h3, but bootstrap uses as="h3" only to style the header as an h3. */}
             <Card.Header className="text-center" as="h3">
               Your to-do list
             </Card.Header>

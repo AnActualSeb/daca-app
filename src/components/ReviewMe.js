@@ -65,7 +65,7 @@ class ReviewMe extends Component {
           </h2>
 
           <Container>
-            <Image src={Review} fluid alt="example of the check" />
+            <Image src={Review} fluid alt="Filled out application pdf" />
           </Container>
 
           <Container>

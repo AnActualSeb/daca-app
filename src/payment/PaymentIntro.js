@@ -16,7 +16,7 @@ export default class PaymentIntro extends Component {
       <Container>
         <h1 className="text-center">Prepare payment to USCIS</h1>
         <Container className="text-center">
-          <Image src={money} width={500} fluid alt="money" />
+          <Image src={money} width={500} fluid alt="Icon of cash bill" />
         </Container>
 
         <h2 className="text-center mb-4">
