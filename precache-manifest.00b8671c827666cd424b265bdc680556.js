@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/daca-app/static/js/runtime~main.095cce56.js"
   },
   {
-    "revision": "5f1baef63d0cc5026503",
-    "url": "/daca-app/static/js/main.14f8a319.chunk.js"
+    "revision": "813e71f97e6ab410408e",
+    "url": "/daca-app/static/js/main.34baf1df.chunk.js"
   },
   {
-    "revision": "c9e67d8c6ae0a4ea3400",
+    "revision": "70ab0be2a0a4d721856f",
     "url": "/daca-app/static/js/2.d787bb23.chunk.js"
   },
   {
-    "revision": "5f1baef63d0cc5026503",
-    "url": "/daca-app/static/css/main.5b79b735.chunk.css"
+    "revision": "813e71f97e6ab410408e",
+    "url": "/daca-app/static/css/main.e617b2fd.chunk.css"
   },
   {
-    "revision": "c9e67d8c6ae0a4ea3400",
-    "url": "/daca-app/static/css/2.07cfc93e.chunk.css"
+    "revision": "70ab0be2a0a4d721856f",
+    "url": "/daca-app/static/css/2.4194e297.chunk.css"
   },
   {
-    "revision": "69ed942efb8bce4f024bda36ca9df73f",
+    "revision": "71de7c35c25b19d0df2d986d775f4dd5",
     "url": "/daca-app/index.html"
   }
 ];
