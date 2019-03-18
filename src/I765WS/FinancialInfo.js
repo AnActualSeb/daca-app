@@ -18,30 +18,44 @@ class FinancialInfo extends Component {
             an economic need to work.
           </p>
 
-          <Form.Label>My current annual income</Form.Label>
+          <label htmlFor="annualIncome">My current annual income</label>
 
           <InputGroup as={Col} md="5" style={{ paddingLeft: "0" }}>
             <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">$</InputGroup.Text>
+              <InputGroup.Text id="annualIncomeNum">$</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl type="text" />
+            <FormControl
+              type="text"
+              id="annualIncome"
+              aria-describedby="annualIncomeNum"
+            />
           </InputGroup>
 
-          <Form.Label>My current annual expenses</Form.Label>
+          <label htmlFor="annualExpenses">My current annual expenses</label>
 
           <InputGroup as={Col} md="5" style={{ paddingLeft: "0" }}>
             <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">$</InputGroup.Text>
+              <InputGroup.Text id="annualExpensesNum">$</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl type="text" />
+            <FormControl
+              type="text"
+              id="annualExpenses"
+              aria-describedby="annualExpensesNum"
+            />
           </InputGroup>
-          <Form.Label>The total current value of my assets</Form.Label>
+          <label htmlFor="currentAssets">
+            The total current value of my assets
+          </label>
 
           <InputGroup as={Col} md="5" style={{ paddingLeft: "0" }}>
             <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">$</InputGroup.Text>
+              <InputGroup.Text id="currentAssetsNum">$</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl type="text" />
+            <FormControl
+              type="text"
+              id="currentAssets"
+              aria-describedby="currentAssetsNum"
+            />
           </InputGroup>
 
           <Form.Group
