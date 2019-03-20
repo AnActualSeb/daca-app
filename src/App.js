@@ -46,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div className="mainContent">
             {this.state.showSidebar && <SideNavBar />}
             <Switch>
